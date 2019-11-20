@@ -30,3 +30,9 @@
   padding: 10px 0px;
   margin-bottom: 20px;
 }
+
+@media(max-width:600) {
+  .view_poster, .view_poster img {
+    max-height: 300px;
+  }
+}
