@@ -1,0 +1,80 @@
+.favList_container {
+  margin: 60px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 10px;
+  width: 80%;
+  overflow: auto;
+}
+
+.favorite_container {
+  padding: 10px 0px;
+  display: flex;
+  height: 120px;
+  justify-content: center;
+}
+
+.favorite_container div {
+  border: 1px solid rgb(47, 47, 83);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  min-width: 150px;
+}
+
+.bloc_style {
+  display: flex;
+  overflow: auto;
+  width: 100%;
+}
+
+.favorite_container p {
+  display: inline;
+  
+}
+
+.favorite_container div:not(:first-child) {
+  padding: 5px;
+}
+
+.favorite_container div:last-child {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.favorite_image, .favorite_image img {
+  height: 100%;
+}
+
+.favorite_image img {
+  width: 100%;
+}
+
+.delete_icon, .view_icon {
+  height: 25px; 
+  color: red;
+  display: block; 
+  cursor: pointer; 
+  border: none; 
+}
+
+.view_icon {
+  color: blue;
+}
+
+@media (max-width: 600px) {
+  .favList_container {
+    margin: 60px 0px;
+    padding: 0px;
+    width: 100%;
+  }
+
+  .favorite_container {
+    padding: 10px;
+  }
+}
